@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+<title>GoaTourism</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", Arial, Helvetica, sans-serif}
+.myLink {display: none}
+</style>
+<body class="w3-light-grey">
+
+<!-- Navigation Bar -->
+<div class="w3-bar w3-white w3-border-bottom w3-xlarge">
+  <a href="https://www.google.com/maps?q=goa&oe=utf-8&client=firefox-b-ab&um=1&ie=UTF-8&sa=X&ved=0ahUKEwimtM2Zl4reAhWKPY8KHdVYAxcQ_AUIDigB" class="w3-bar-item w3-button w3-text-red w3-hover-red"><b><i class="fa fa-map-marker w3-margin-right"></i>GOA</b></a>
+  <!--
+  <a href="#" class="w3-bar-item w3-button w3-right w3-hover-red w3-text-grey"><i class="fa fa-search"></i></a>
+    -->
+</div>
+
+<!-- Header -->
+<header class="w3-display-container w3-content w3-hide-small" style="max-width:1500px">
+  <img class="w3-image" src="panajimnightlife.jpg" alt="London" width="1500" height="700">
+  <div class="w3-display-middle" style="width:65%">
+    <div class="w3-bar w3-black">
+      <button class="w3-bar-item w3-button tablink" onclick="openLink(event, 'Flight');"><i class="fa fa-plane w3-margin-right"></i>Flight</button>
+      <button class="w3-bar-item w3-button tablink" onclick="openLink(event, 'Train');"><i class="fa fa-train w3-margin-right"></i>Train</button>
+      <button class="w3-bar-item w3-button tablink" onclick="openLink(event, 'Car');"><i class="fa fa-car w3-margin-right"></i>Rental</button>
+      <button class="w3-bar-item w3-button tablink" onclick="openLink(event, 'Bus');"><i class="fa fa-bus w3-margin-right"></i>Bus</button>
+      <button class="w3-bar-item w3-button tablink" onclick="openLink(event, 'Ship');"><i class="fa fa-ship w3-margin-right"></i>Cruze</button>
+    </div>
+
+    <!-- Tabs -->
+    <div id="Flight" class="w3-container w3-white w3-padding-16 myLink">
+      <form action="b.php" method="Post">
+      <h3>Travel the world with us</h3>
+      <div class="w3-row-padding" style="margin:0 -16px;">
+        <div class="w3-half">
+          <label>From</label>
+          <input class="w3-input w3-border" type="text" name="departure_airport_name" placeholder="Departing from">
+        </div>
+        <div class="w3-half">
+          <label>To</label>
+          <input class="w3-input w3-border" type="text" name="arrival_airport_name" placeholder="Arriving at">
+        </div>
+        <div class="w3-half">
+          <label>Plane name</label>
+          <input class="w3-input w3-border" type="text" name="plane_name" placeholder="eg. air india, indigo">
+        </div>
+          <div class="w3-half">
+          <label>Class</label>
+          <input class="w3-input w3-border" type="text" name="class" placeholder="eg. business, economy">
+        </div>
+      </div>
+      <p><button class="w3-button w3-dark-grey" type="submit" >Get my price</button></p>
+    </div>
+    </form>
+    <div id="Train" class="w3-container w3-white w3-padding-16 myLink">
+     <!-- <h3>Find the best hotels</h3>
+      <p>Book a hotel with us and get the best fares and promotions.</p>
+      <p>We know hotels - we know comfort.</p>
+      <p><button class="w3-button w3-dark-grey">Search Hotels</button></p>
+    </div>
+
+    <div id="Car" class="w3-container w3-white w3-padding-16 myLink">
+      <h3>Best car rental in the world!</h3>
+      <p><span class="w3-tag w3-deep-orange">DISCOUNT!</span> Special offer if you book today: 25% off anywhere in the world with CarServiceRentalRUs</p>
+      <input class="w3-input w3-border" type="text" placeholder="Pick-up point">
+      <p><button class="w3-button w3-dark-grey">Search Availability</button></p>
+    </div>
+
+    <div id="Bus" class="w3-container w3-white w3-padding-16 myLink">
+      <h3>Find the best hotels</h3>
+      <p>Book a hotel with us and get the best fares and promotions.</p>
+      <p>We know hotels - we know comfort.</p>
+      <p><button class="w3-button w3-dark-grey">Search Hotels</button></p>
+    </div>
+
+    <div id="Cruze" class="w3-container w3-white w3-padding-16 myLink">
+      <h3>Find the best hotels</h3>
+      <p>Book a hotel with us and get the best fares and promotions.</p>
+      <p>We know hotels - we know comfort.</p>
+      <p><button class="w3-button w3-dark-grey">Search Hotels</button></p>
+    </div>
+
+-->
+
+
+
+  </div>
+</header>
+
+<!-- Page content -->
+<div class="w3-content" style="max-width:1100px;">
+
+  <!-- Good offers -->
+  <div class="w3-container w3-margin-top">
+    <h3>Check out the destinations</h3>
+    <h6>Up to <strong>50%</strong> discount on selected destinations.</h6>
+  </div>
+  <div class="w3-row-padding w3-text-white w3-large">
+    <div class="w3-half w3-margin-bottom">
+      <div class="w3-display-container">
+        <img src="sisterstatelead.jpg" alt="sisterstatelead" style="width:100%">
+        <span class="w3-display-bottomright w3-padding">Beaches</span>
+      </div>
+    </div>
+    <div class="w3-half">
+      <div class="w3-row-padding" style="margin:0 -16px">
+        <div class="w3-half w3-margin-bottom">
+          <div class="w3-display-container">
+            <img src="mangeshi.png" alt="mangeshi" style="width:100%">
+            <span class="w3-display-bottomright w3-padding">Temples</span>
+          </div>
+        </div>
+        <div class="w3-half w3-margin-bottom">
+          <div class="w3-display-container">
+            <img src="mandovibridge.jpg" alt="mandovibridge" style="width:100%">
+            <span class="w3-display-bottomright w3-padding">Capital city</span>
+          </div>
+        </div>
+      </div>
+      <div class="w3-row-padding" style="margin:0 -16px">
+        <div class="w3-half w3-margin-bottom">
+          <div class="w3-display-container">
+            <img src="oldgoachurch.jpg" alt="oldgoachurch" style="width:100%">
+            <span class="w3-display-bottomright w3-padding">Churches</span>
+          </div>
+        </div>
+        <div class="w3-half w3-margin-bottom">
+          <div class="w3-display-container">
+            <img src="dudhsagar.jpg" alt="dudhsagar" style="width:100%">
+            <span class="w3-display-bottomright w3-padding">Waterfalls</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Explore Nature -->
+  <div class="w3-container">
+    <h3>Explore 360° views</h3>
+    <p>See Goa at its finest.</p>
+  </div>
+  <div class="w3-row-padding">
+    <div class="w3-half w3-margin-bottom">
+      <a href="https://www.goa-tourism.com/GTDC-Panoramas/Goa%20Tourism/ReisMagosFort/ReisMagosFort"><img src="ReisMagosFort.jpg" alt="ReisMagosFort" style="width:100%"></a>
+      <div class="w3-container w3-white">
+        <h3>ReisMagosFort</h3>
+        <!--<p class="w3-opacity">Roundtrip from $79</p>-->
+        <p>Predating Fort Aguada by half a century, a second, smaller fort that crowns the headland jutting into the narrowest stretch of the Mandovi, almost facing the capital city Panjim, is the Reis Magos Fort. This Fort, surrounded by sturdy laterite walls studded with typically Portuguese turrets, was erected in 1551 to protect the narrowest point at the mouth of the Mandovi estuary. It was enlarged subsequently on different occasions and finally re-erected in 1707.  </p>
+        <button href=""https://www.goa-tourism.com/GTDC-Panoramas/Goa%20Tourism/ReisMagosFort/ReisMagosFort" class="w3-button w3-margin-bottom">VIEW 360°</button>
+      </div>
+    </div>
+    <div class="w3-half w3-margin-bottom">
+      <a href="https://www.goa-tourism.com/GTDC-Panoramas/Goa%20Tourism/OldGoa/OldGoa"><img src="oldgoa.jpg" alt="oldgoa" style="width:100%"></a>
+      <div class="w3-container w3-white">
+        <h3>OldGoa</h3>
+        <!--<p class="w3-opacity">One-way from $39</p>-->
+        <p>Don’t let its unassuming air fool you, the Bom Jesus Basilica is a World Heritage Monument, and has been christened so by UNESCO. Its un-plastered exterior appears at first glance to be inferior as compared to the sparkling facades of churches like the Se Cathedral, but this little Basilica is rich in art, architecture and history, and the relics of Saint Francis Xavier are enshrined here.</p>
+        <button href="https://www.goa-tourism.com/GTDC-Panoramas/Goa%20Tourism/OldGoa/OldGoa" class="w3-button w3-margin-bottom">VIEW 360°</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Newsletter
+  <div class="w3-container">
+    <div class="w3-panel w3-padding-16 w3-black w3-opacity w3-card w3-hover-opacity-off">
+      <h2>Get the best offers first!</h2>
+      <p>Join our newsletter.</p>
+      <label>E-mail</label>
+      <input class="w3-input w3-border" type="text" placeholder="Your Email address">
+      <button type="button" class="w3-button w3-red w3-margin-top">Subscribe</button>
+    </div>
+  </div>
+   -->
+
+  <!-- Contact
+  <div class="w3-container">
+    <h2>Contact</h2>
+    <p>Let us help you book your next trip!</p>
+    <i class="fa fa-map-marker" style="width:30px"></i> Farmagudi, Goa<br>
+    <i class="fa fa-phone" style="width:30px"></i> Phone: 8605317588<br>
+    <i class="fa fa-envelope" style="width:30px"> </i> Email: email@gmail.com<br>
+    <form action="/action_page.php" target="_blank">
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Name" required name="Name"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Email" required name="Email"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Message" required name="Message"></p>
+      <p><button class="w3-button w3-black w3-padding-large" type="submit">SEND MESSAGE</button></p>
+    </form>
+  </div>
+   -->
+<!-- End page content -->
+</div>
+
+<!-- Footer -->
+<footer class="w3-container w3-center w3-opacity w3-margin-bottom">
+  <h5>Find Us On</h5>
+  <div class="w3-xlarge w3-padding-16">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+  </div>
+  <p>Powered by <a href="http://www.nitgoa.ac.in" target="_blank" class="w3-hover-text-green">NITG</a></p>
+</footer>
+
+<script>
+// Tabs
+function openLink(evt, linkName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("myLink");
+  for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+      tablinks[i].className = tablinks[i].className.replace(" w3-red", "");
+  }
+  document.getElementById(linkName).style.display = "block";
+  evt.currentTarget.className += " w3-red";
+}
+// Click on the first tablink on load
+document.getElementsByClassName("tablink")[0].click();
+</script>
+
+</body>
+</html>
