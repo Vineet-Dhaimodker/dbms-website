@@ -5,7 +5,7 @@ This website is for Goa Tourism, it aims to enable tourists in Goa to easily arr
 Flight Ticket Booking System
 
 ## Coming Soon
-Train
-Bus
-Taxi
-Cruise
+Train,
+Bus,
+Taxi,
+Cruise Booking Systems
