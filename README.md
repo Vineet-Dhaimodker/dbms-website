@@ -1,2 +1,14 @@
-# Flight Ticket Booking System
-Enables users to enter the source and destination boarding points and book flight tickets
+# Goa Tourism Transport
+This website is for Goa Tourism, it aims to enable tourists in Goa to easily arrange for transport.
+
+## Implemented
+Flight Ticket Booking System
+
+## Coming Soon
+Train
+
+Bus
+
+Taxi
+
+Cruise
