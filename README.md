@@ -6,9 +6,6 @@ Flight Ticket Booking System
 
 ## Coming Soon
 Train
-
 Bus
-
 Taxi
-
 Cruise
